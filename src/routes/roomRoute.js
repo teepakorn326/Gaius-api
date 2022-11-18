@@ -24,7 +24,6 @@ router.patch(
   authenticate,
   upload.fields([{ name: "estatePhoto", maxCount: 10 }]),
   roomController.updateRoom
-  // (req,res) => res.status(200).json({message:"KUYYYYYYYYY"})
 );
 
 router.delete("/deleteroom/:id", authenticate, roomController.deleteRoom);

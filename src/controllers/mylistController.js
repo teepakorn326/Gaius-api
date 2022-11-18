@@ -49,7 +49,7 @@ exports.allBookingList = async (req, res, next) => {
 
 exports.deleteBooking = async (req, res, next) => {
   try {
-    const { id } = req.body;
+    const { id } = req.params;
 
     const selectedBooking = await Booking.findOne({ where: { id } });
 
